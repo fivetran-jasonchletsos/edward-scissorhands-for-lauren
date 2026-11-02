@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edward Scissorhands, the unfinished fairy tale</title>
+<meta name="description" content="Cool and interesting facts about Edward Scissorhands, made for Lauren.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="snow" aria-hidden="true"></canvas>
+
+<header class="top">
+  <a href="#top" class="mark">Edward Scissorhands</a>
+  <nav>
+    <a href="#facts">Facts</a>
+    <a href="#cast">Cast</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#for-lauren">For Lauren</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="candle" aria-hidden="true">
+      <div class="flame"></div>
+      <div class="wick"></div>
+      <div class="wax"></div>
+    </div>
+    <p class="eyebrow">Tim Burton, 1990</p>
+    <h1>The man who was<br><em>not finished.</em></h1>
+    <p class="lede">A gentle monster, a pastel suburb, and a snowfall with a secret. Here is everything cool and strange about one of the most beloved movies ever made.</p>
+    <a class="btn" href="#facts">Start reading</a>
+  </section>
+
+  <section class="stats" aria-label="At a glance">
+    <div><span class="num">1990</span><span class="lab">Released December 7</span></div>
+    <div><span class="num">$20M</span><span class="lab">Approximate budget</span></div>
+    <div><span class="num">$86M</span><span class="lab">Worldwide gross</span></div>
+    <div><span class="num">&lt;200</span><span class="lab">Words Edward speaks</span></div>
+  </section>
+
+  <section id="facts" class="block">
+    <h2>The facts</h2>
+    <p class="sub">Tap a card to flip it for the backstory. Use the filters to narrow down.</p>
+    <div class="filters" id="filters" role="group" aria-label="Filter facts"></div>
+    <div class="grid" id="grid"></div>
+    <div class="random">
+      <button class="btn ghost" id="randomBtn">Surprise me with a fact</button>
+      <p id="randomOut" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section class="pull">
+    <blockquote>
+      <p>Hold me.</p>
+      <p class="reply">I can't.</p>
+    </blockquote>
+    <cite>Kim and Edward, the line everyone remembers</cite>
+  </section>
+
+  <section id="cast" class="block">
+    <h2>The people in the story</h2>
+    <div class="cast" id="castList"></div>
+  </section>
+
+  <section class="block two">
+    <div>
+      <h2>Why it is grey and white</h2>
+      <p>Look at the movie again and the design is a deliberate argument. The suburb is candy pastel, every house a different sugary shade, every lawn identical. The castle on the hill, and Edward himself, are black and charcoal and pale. Burton puts the colorful world and the monochrome world next to each other and lets you decide which one is actually warmer.</p>
+      <p>That is also why this page looks the way it does. Grey, white, and a little candlelight.</p>
+    </div>
+    <div>
+      <h2>Where the snow comes from</h2>
+      <p>The film is told as a bedtime story by an elderly Kim to her granddaughter, who asks why it snows. The answer is Edward, still alone in his castle, carving ice sculptures, and the shavings drift down over the town. It is the reason the movie feels like a fairy tale and not just a drama.</p>
+      <p>Nothing here is scary. It is sad in the way that good stories are.</p>
+    </div>
+  </section>
+
+  <section id="quiz" class="block">
+    <h2>Test yourself</h2>
+    <p class="sub">Five questions. No pressure.</p>
+    <div id="quizBox" class="quiz"></div>
+  </section>
+
+  <section id="for-lauren" class="lauren">
+    <div class="candle small" aria-hidden="true">
+      <div class="flame"></div>
+      <div class="wick"></div>
+      <div class="wax"></div>
+    </div>
+    <h2>For Lauren</h2>
+    <p>For a friend who loves candles and doolies, and who I got to know in the hospital. Some of the best people show up in the strangest places. Edward would have liked you. Light a candle, watch the movie, and know somebody made you a whole website about a man with scissors for hands.</p>
+    <button class="btn" id="lightBtn">Light a candle</button>
+    <p id="lightOut" class="lightout" aria-live="polite"></p>
+  </section>
+</main>
+
+<footer>
+  <p>An unofficial fan page. Facts are drawn from widely reported film history. Made with care for Lauren.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
